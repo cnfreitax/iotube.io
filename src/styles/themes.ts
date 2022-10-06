@@ -1,6 +1,6 @@
-const base = '#000103'
+const base = '#ffffff'
 const light = '#282626'
-const gray = '#E2E8F0'
+const gray = '#003333'
 
 export const breakpoints = ['640px', '64em', '72em']
 
