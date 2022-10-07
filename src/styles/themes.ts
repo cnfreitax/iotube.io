@@ -1,6 +1,10 @@
 const base = '#ffffff'
 const light = '#282626'
-const gray = '#003333'
+const gray = '#dbdbdb'
+const light200 = '#F2F0EB'
+const orange100 = '#F2D5BB'
+const orange300 = '#F2C185'
+const orange900 = '#59320F'
 
 export const breakpoints = ['640px', '64em', '72em']
 
@@ -13,7 +17,11 @@ export const mediaQueries = {
 export const colors = {
   base,
   light,
-  gray
+  gray,
+  light200,
+  orange100,
+  orange300,
+  orange900
 }
 
 const fontSize = {
