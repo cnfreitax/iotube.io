@@ -11,25 +11,6 @@ export type TextProps = {
   role?: string
 }
 
-export const Text = ({
-  children,
-  color,
-  size,
-  fontWeight,
-  lineHeight,
-  as,
-  role
-}: TextProps) => {
-  return (
-    <S.Heading
-      role={role}
-      color={color}
-      size={size}
-      fontWeight={fontWeight}
-      lineHeight={lineHeight}
-      as={as}
-    >
-      {children}
-    </S.Heading>
-  )
+export const Text = ({ children, ...styleProps }: TextProps) => {
+  return <S.Heading {...styleProps}>{children}</S.Heading>
 }

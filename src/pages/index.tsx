@@ -1,5 +1,5 @@
-import { HomeContainer } from '../containers/Home'
+import { LoginContainer } from 'containers/Login'
 
 export default function Main() {
-  return <HomeContainer />
+  return <LoginContainer />
 }

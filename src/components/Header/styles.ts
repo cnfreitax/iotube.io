@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { getPaletteColor } from 'utils/handleThemeProvide'
+import { getPaletteColor } from '../../utils/handleThemeProvide'
 
 export const Header = styled.header`
   display: flex;

@@ -4,18 +4,26 @@ import { getPaletteColor } from 'utils/handleThemeProvide'
 export const Label = styled.label`
   display: flex;
   align-items: center;
-  height: 100%;
-  max-height: 57px;
+  height: 57px;
   width: 100%;
   max-width: 550px;
-  padding: 2rem;
-  border: 2px solid ${getPaletteColor('gray')};
-  border-radius: 12px;
+  border-bottom: 3px solid ${getPaletteColor('gray')};
   font-size: 26px;
+
+  & + & {
+    margin-top: 10px;
+  }
 `
 
 export const Input = styled.input`
   width: 100%;
+  padding: 8px;
   background: transparent;
+  flex: 1;
+  height: 100%;
   border: none;
+
+  &:focus {
+    outline: none;
+  }
 `

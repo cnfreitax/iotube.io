@@ -1,6 +1,6 @@
 import styled, { css } from 'styled-components'
 import { TextProps } from './index'
-import { getFontSize, getPaletteColor } from 'utils/handleThemeProvide'
+import { getFontSize, getPaletteColor } from '../../utils/handleThemeProvide'
 
 export const Heading = styled('h1').attrs<TextProps>(({ as }) => ({
   as: as

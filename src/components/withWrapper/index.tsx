@@ -4,12 +4,13 @@ import * as S from './styles'
 
 type WithWrapperType = {
   children: React.ReactNode
+  hasHeader?: boolean
 }
 
-export const WithWrapper = ({ children }: WithWrapperType) => {
+export const WithWrapper = ({ children, hasHeader }: WithWrapperType) => {
   return (
     <S.Wrapper>
-      <Header />
+      {hasHeader && <Header />}
       {children}
     </S.Wrapper>
   )

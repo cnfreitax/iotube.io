@@ -7,5 +7,6 @@ export const Wrapper = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: ${getPaletteColor('base')};
+  padding: 14px;
+  background-color: ${getPaletteColor('light200')};
 `
