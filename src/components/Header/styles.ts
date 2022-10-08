@@ -6,7 +6,7 @@ export const Header = styled.header`
   align-items: center;
   justify-content: space-between;
   padding: 25px;
-  background-color: ${getPaletteColor('base')};
+  background-color: ${getPaletteColor('orange300')};
   border-bottom: 1px solid ${getPaletteColor('gray')};
   position: fixed;
   width: 100%;

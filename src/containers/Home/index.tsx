@@ -1,15 +1,21 @@
 import { Input } from 'components/Input'
+import { useForm } from 'react-hook-form'
 import { WithWrapper } from 'components/withWrapper'
 
 import * as S from './styles'
 
 export const HomeContainer = () => {
-  const handleSubmitSearch = (event: any) => console.log(event.target.value)
+  const { register } = useForm()
 
   return (
-    <WithWrapper>
+    <WithWrapper hasHeader>
       <S.Wrapper>
-        <Input onChange={handleSubmitSearch} />
+        <Input
+          placheholder="search"
+          icon="ssas"
+          name="search"
+          register={register}
+        />
       </S.Wrapper>
     </WithWrapper>
   )
