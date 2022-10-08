@@ -8,6 +8,8 @@ export const Label = styled.label`
   width: 100%;
   max-width: 550px;
   border-bottom: 3px solid ${getPaletteColor('gray')};
+  background-color: ${getPaletteColor('base')};
+  border-radius: 4px;
   font-size: 26px;
 
   & + & {
@@ -26,4 +28,14 @@ export const Input = styled.input`
   &:focus {
     outline: none;
   }
+`
+
+export const SearchButton = styled.button`
+  height: 100%;
+  width: 100%;
+  background-color: ${getPaletteColor('orange300')};
+  border: none;
+  cursor: pointer;
+  max-width: 60px;
+  border-radius: 0 4px 4px 0;
 `
