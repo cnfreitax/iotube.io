@@ -22,7 +22,7 @@ export const LoginContainer = () => {
     })()
   })
 
-  const onSubmit = (data: any) => {
+  const onSubmit = (data) => {
     console.log(data)
     Cookie.set('io_login', JSON.stringify(data))
   }

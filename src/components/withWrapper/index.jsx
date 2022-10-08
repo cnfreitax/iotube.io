@@ -2,12 +2,7 @@ import { Header } from 'components/Header'
 import React from 'react'
 import * as S from './styles'
 
-type WithWrapperType = {
-  children: React.ReactNode
-  hasHeader?: boolean
-}
-
-export const WithWrapper = ({ children, hasHeader }: WithWrapperType) => {
+export const WithWrapper = ({ children, hasHeader }) => {
   return (
     <S.Wrapper>
       {hasHeader && <Header />}

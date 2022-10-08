@@ -1,9 +1,8 @@
 import styled from 'styled-components'
 import { darken } from 'polished'
 import { getFontSize, getPaletteColor } from 'utils/handleThemeProvide'
-import { ButtonComponentProps } from '.'
 
-export const Button = styled.button<Pick<ButtonComponentProps, 'mt' | 'maxw'>>`
+export const Button = styled.button`
   margin-top: ${({ mt }) => mt || 12}px;
   width: 100%;
   max-width: ${({ maxw }) => `${maxw}px` || '100%'};

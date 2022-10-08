@@ -9,7 +9,7 @@ import * as S from './styles'
 export const HomeContainer = () => {
   const { register, handleSubmit } = useForm()
 
-  const handleSearchVideo = async (title: string) => {
+  const handleSearchVideo = async (title) => {
     const result = await api.get('/search', {
       params: {
         q: title,

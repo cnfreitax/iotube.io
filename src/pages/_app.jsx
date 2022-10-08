@@ -1,11 +1,10 @@
-import { AppProps } from 'next/app'
 import Head from 'next/head'
 import { ThemeProvider } from 'styled-components'
 import { theme } from 'styles/themes'
 
 import { GlobalStyles } from '../styles/global'
 
-export default function App({ Component, pageProps }: AppProps) {
+export default function App({ Component, pageProps }) {
   return (
     <ThemeProvider theme={theme}>
       <Head>
