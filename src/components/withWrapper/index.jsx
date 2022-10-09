@@ -6,7 +6,7 @@ export const WithWrapper = ({ children, hasHeader }) => {
   return (
     <S.Wrapper>
       {hasHeader && <Header />}
-      {children}
+      <S.Content>{children}</S.Content>
     </S.Wrapper>
   )
 }

@@ -2,7 +2,6 @@ import { themeGet } from '@styled-system/theme-get'
 
 const getMediaQuery = (size) => (props) => {
   const queries = themeGet('mediaQueries')(props) || {}
-  console.log(queries[size])
   return queries[size]
 }
 

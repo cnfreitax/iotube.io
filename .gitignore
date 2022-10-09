@@ -4,6 +4,7 @@ public/workbox-*.js
 /node_modules
 /.pnp
 .pnp.js
+.jest-coverage
 
 /coverage
 
