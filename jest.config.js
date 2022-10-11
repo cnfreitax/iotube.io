@@ -11,6 +11,7 @@ module.exports = {
   moduleNameMapper: {
     'components/(.*)$': '<rootDir>/src/components/$1',
     'containers/(.*)$': '<rootDir>/src/containers/$1',
+    'context/(.*)$': '<rootDir>/src/context/$1',
     '^utils/(.*)$': '<rootDir>/src/utils/$1',
     '^styles/(.*)$': '<rootDir>/src/styles/$1'
   },
