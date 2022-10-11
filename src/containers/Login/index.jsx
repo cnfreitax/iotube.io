@@ -9,21 +9,22 @@ import { Text } from 'components/Text'
 import { WithWrapper } from 'components/withWrapper'
 
 import * as S from './styles'
+import { useUser } from 'context/useContext'
 
 export const LoginContainer = () => {
+  const { loginUser, loggedUser } = useUser()
   const { register, handleSubmit } = useForm()
 
   useEffect(() => {
     ;(() => {
-      const user = Cookie.get('io_login')
-      if (user) {
+      if (loggedUser) {
         Router.push('/home')
       }
     })()
-  })
+  }, [loggedUser])
 
   const onSubmit = (data) => {
-    Cookie.set('io_login', JSON.stringify(data))
+    loginUser(data)
   }
 
   return (

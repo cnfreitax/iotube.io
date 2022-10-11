@@ -27,7 +27,7 @@ export const HomeContainer = () => {
   }
 
   return (
-    <WithWrapper hasHeader>
+    <WithWrapper hasHeader privateAuth>
       <S.Wrapper>
         <S.Form
           onSubmit={handleSubmit((e) => handleSearchVideo(e.search))}
@@ -42,7 +42,8 @@ export const HomeContainer = () => {
         </S.Form>
 
         <S.VideoList>
-          {searchResult && isSearching &&
+          {searchResult &&
+            isSearching &&
             searchResult.items.map((item) => {
               return <VideoLink item={item} />
             })}
