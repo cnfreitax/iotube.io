@@ -7,6 +7,7 @@ const visibleAnimation = keyframes`
   100% { opacity: 1 }
 `
 
+
 export const LoginFormBox = styled.div`
   display: flex;
   flex-direction: column;

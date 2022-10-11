@@ -23,12 +23,11 @@ export const LoginContainer = () => {
   })
 
   const onSubmit = (data) => {
-    console.log(data)
     Cookie.set('io_login', JSON.stringify(data))
   }
 
   return (
-    <WithWrapper>
+    <WithWrapper alignCenter>
       <S.LoginFormBox>
         <Text as={'h1'} size={2} color="orange900">
           iotube
