@@ -6,7 +6,13 @@ export const Wrapper = styled.div`
   display: flex;
   position: relative;
   justify-content: center;
+  align-items: flex-start;
+
   ${getMediaQuery('small')} {
+    flex-direction: column;
+  }
+
+  ${getMediaQuery('medium')} {
     flex-direction: column;
   }
 `

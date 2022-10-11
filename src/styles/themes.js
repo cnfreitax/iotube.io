@@ -6,11 +6,11 @@ const orange100 = '#F2D5BB'
 const orange300 = '#F2C185'
 const orange900 = '#59320F'
 
-export const breakpoints = ['640px', '64em', '72em']
+export const breakpoints = ['640px', '920px', '72em']
 
 export const mediaQueries = {
   small: `@media screen and (max-width: ${breakpoints[0]})`,
-  medium: `@media screen and (min-width: ${breakpoints[1]})`,
+  medium: `@media screen and (max-width: ${breakpoints[1]})`,
   large: `@media screen and (min-width: ${breakpoints[2]})`
 }
 
